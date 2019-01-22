@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery练习</title>
+		<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				//获取姓名输入框（使用id选择器进行选择）
+				var name=$("#name")
+				//标签属性选择器选择点击按钮
+				var but=$("input[name='but']")
+				var sp=$("#sp")
+				//给按钮一个点击事件
+				but.click(function(){
+					//获取文本框中的内容
+//					var valName=name.val()
+//					alert(valName)
+					//获取span标签中的内容
+//					var spVal=sp.html()
+//					alert(spVal)
+					//改变span标签中的内容
+					sp.html("北京大学")
+					//给文本更换内容
+					name.val("李四")
+					$(this).css("background-color","yellow")
+					sp.css("font-size","30px")
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<span id="sp">吉林工程师范学院</span><br />
+		输入姓名：<input id="name" type="text" value="张三"/>
+		<input name="but" id="but" type="button" value="请点击"/>
+	</body>
+</html>

@@ -1,0 +1,60 @@
+<pre name="code" class="css">*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	font-size:12px;
+	font-family:"Microsoft YaHei";
+}
+.wrapper{
+	width:100%;
+}
+.top{
+	height:50px;
+	/*background-color:blue;*/
+}
+.topleft{
+	float:left;
+}
+.topright{
+	float:right
+}
+.main{
+	height:450px;
+	/*background:blue;*/
+}
+.pic{	
+	margin-top:100px;
+	text-align:center
+}
+.search{
+	text-align:center;
+	margin-top:30px;
+}
+.input{
+	font-size:20px;
+	width:400px;
+	border-width:1px;
+	border-color:#317EF3;
+	padding:0px;
+	vertical-align: middle
+}
+#button{
+	color:#FFF;
+	width:100px;
+	height:25px;
+	background:#317EF3;
+	margin-left:-10px;
+	border:0px;
+	padding:0px;
+	vertical-align: middle
+}
+.bottom{
+	text-align:center;
+	margin-bottom:30px;
+}
+.ul1 li{
+	display:inline;
+	margin-bottom:10px;
+	margin-right:10px;
+}

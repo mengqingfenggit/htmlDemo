@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>形变</title>
+		<style type="text/css">
+			#transform:hover{
+				width: 100px;
+				height: 200px;
+				background-color: orange;
+				/*通过外边距设置左右居中*/
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 200px;
+				color: white;
+				
+				/*设置旋转点*/
+				transform-origin: center bottom;
+				
+				/*
+				 * 旋转
+				 * degree；度
+				 * rotate(30deg)：默认沿着z轴旋转
+				 * rotateX(30deg):沿着X轴旋转
+				 * rotateY(30deg):沿着Y轴旋转
+				 * */
+				/*transform: rotate(-30deg);*/
+				
+				/*放大*/
+				/*transform: scale(2);*/
+				/*注意：rotate和scale使用transform不能两个同时设置*/
+				
+				/*合并*/
+				transform: rotate(-30deg) scale(1.5);
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="transform">形变</div>
+	</body>
+</html>

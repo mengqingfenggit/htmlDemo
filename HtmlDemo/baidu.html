@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>百度首页</title>
+		<style type="text/css">
+			#borders{
+				width: 100%;
+				height: 30px;
+				border-top: 1px solid gainsboro;
+				border-bottom: 1px solid gainsboro;
+				/*上下居中*/
+				line-height: 30px;
+			}
+			#tianqi{
+				float: left;
+				font-size: 15px;
+			}
+			#head{
+				float: right;
+			}
+			.headlink{
+				font-family: "宋体";
+				/*设置字体加粗*/
+				font-weight: 600;
+				color: black;
+				/*设置外边距*/
+				margin: 5px;
+			}
+			#moreDiv{
+				width: 100px;
+				background-color: blue;
+				float: right;
+				text-align: center;
+			}
+			.more{
+				color: white;
+				text-decoration: none; 
+			}
+			#middle{
+				text-align: center;
+				margin: initial;
+			}
+			#key{
+				width: 500px;
+				height: 40px;
+			}
+			#btnText{
+				font-size: 20px;
+				color: #FFFFFF;
+				text-decoration: none; 
+			}
+			#btn{
+				/*通过对div设置display:inline-block样式让div同样失去默认100%独占一行的宽度。
+				display:inline-block意思是让对象并排显示。*/
+				display:inline-block;
+				width: 100px;
+				height: 40px;
+				text-align: center;
+				background-color: lightseagreen;
+			}
+			#form{
+				line-height: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<!--右上角文字-->
+		<div id="borders">
+			<div id="tianqi">
+				北京： 1℃轻度120 | 换肤消息
+			</div>
+			<div id="head">
+				<a class="headlink" href="#">新闻</a>
+				<a class="headlink" href="#">好123</a>
+				<a class="headlink" href="#">地图</a>
+				<a class="headlink" href="#">视频</a>
+				<a class="headlink" href="#">贴吧</a>
+				<a class="headlink" href="#">学术</a>
+				<a class="headlink" href="#">登录</a>
+				<a class="headlink" href="#">设置</a>
+				<div id="moreDiv">
+					<a class="more" href="#">更多产品</a>
+				</div>
+			</div>
+		</div>
+		<!--中间百度logo和输入框-->
+		<div id="middle">
+			<!--logo-->
+			<img src="https://www.baidu.com/img/bd_logo1.png" />
+			
+			<!--输入框和按钮-->
+				<form>
+					<div id="inp">
+						<input id="key" type="text" name="text" />
+					</div>
+					<div id="btn">
+						<a href="#" id="btnText">百度一下</a>
+					</div>
+				</form>
+		</div>
+	</body>
+</html>

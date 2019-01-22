@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表格操作</title>
+	</head>
+	<body>
+		<table cellspacing="5" bordercolor="red" border="1" align="center" width="500" height="60">
+			<tr>
+				<th>姓名</th>
+				<th>性别</th>
+				<th>年龄</th>
+				<th>住址</th>
+			</tr>
+			<tr align="center">
+				<td>张三</td>
+				<td>男</td>
+				<td>18</td>
+				<td>贵州</td>
+			</tr>
+			<tr align="center">
+				<td>张三</td>
+				<td>男</td>
+				<td>18</td>
+				<td>贵州</td>
+			</tr>
+			<tr align="center">
+				<td>张三</td>
+				<td>男</td>
+				<td>18</td>
+				<td>贵州</td>
+			</tr>
+		</table>
+		
+		<hr />
+		<form action="index.html" method="post">
+			用户名：<input type="text" name="name"/><br />
+			密码：<input type="password" name="pwd"/><br />
+			确认密码：<input type="password" name="pwd2"/><br />
+			邮箱：<input type="email" name="email"/><br />
+			验证码：<input type="text" name="code"/><br />
+			地址：	<select>
+						<option selected="selected">--请选择--</option>
+						<option>河南</option>
+						<option>河北</option>
+						<option>河南</option>
+						<option>河北</option>
+			</select><br/>
+			<textarea id="txtCon" rows="10" cols="50" >yy</textarea>		
+			<input type="submit" value="注册"/>|<input type="reset" value="重置"/>
+		</form>
+	</body>
+</html>

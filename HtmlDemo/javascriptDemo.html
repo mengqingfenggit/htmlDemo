@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>JavaScript</title>
+		<script type="text/javascript">
+			window.onload=function(){
+//				获取输入姓名的文本框
+				var name=document.getElementById("name");
+				//获取点击按钮对象
+				var but=document.getElementById("but");
+				var sp=document.getElementById("sp");
+				but.onclick=function(){
+					//valName=name.value //获取文本框的值
+					//alert(valName)
+					//改变span标签中的值
+//					sp.innerHTML="北京大学"
+//					name.value="无名氏"
+//					改变按钮的内容
+//改变标签中的内容的时候使用innerHTML，改变文本框中的内容的时候使用value
+					this.value="点点点"
+					this.style.backgroundColor="yellow"
+					this.style.color="red"
+				}
+				//内容发送改变的时候调用该函数
+				name.onchange=function(){
+					//this代表当前操作对象
+					alert(this.value)
+				}
+				
+			}
+		</script>
+	</head>
+	<body>
+		<span id="sp">吉林工程师范学院</span><br />
+		输入姓名：<input id="name" type="text" value="张三"/>
+		<input id="but" type="button" value="请点击"/>
+	</body>
+</html>

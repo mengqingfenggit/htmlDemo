@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>照片墙</title>
+		<style type="text/css">
+			/*设置照片墙的背景*/
+			#photo{
+				width: 70%;
+				height: 500px;
+				margin: 100px;
+				background-color: orange;
+			}
+			/*设置图片的大小和过渡时间*/
+			img{
+				width: 200px;
+				height: 200px;
+				margin: 10px;
+				border: 3px solid white;
+				/*过渡的特性*/
+				transition-property: transform;
+				/*发生过渡的时间*/
+				transition-duration: 2s;
+			}
+			/*鼠标移动在图片上的时候发生旋转和放大*/
+			div>img:hover{
+				transform: scale(1.2) rotate(0deg);
+			}
+			img:nth-child(1){
+				transform: rotate(-15deg);
+			}
+			img:nth-child(2){
+				transform: rotate(10deg);
+			}
+			img:nth-child(3){
+				transform: rotate(20deg);
+			}
+			img:nth-child(4){
+				transform: rotate(-10deg);
+			}
+			img:nth-child(5){
+				transform: rotate(20deg);
+			}
+			img:nth-child(6){
+				transform: rotate(8deg);
+			}
+			img:nth-child(7){
+				transform: rotate(-10deg);
+			}
+			img:nth-child(8){
+				transform: rotate(-10deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="photo">
+			<img src="img/photowall/pic1.jpg" />
+			<img src="img/photowall/pic2.jpg" />
+			<img src="img/photowall/pic3.jpg" />
+			<img src="img/photowall/pic4.jpg" />
+			<img src="img/photowall/pic5.jpg" />
+			<img src="img/photowall/pic6.jpg" />
+			<img src="img/photowall/pic7.jpg" />
+			<img src="img/photowall/pic9.jpg" />
+		</div>
+	</body>
+</html>
