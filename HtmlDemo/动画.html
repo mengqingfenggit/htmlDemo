@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>动画练习</title>
+		<style type="text/css">
+			#div1{
+				width: 300px;
+				height: 300px;
+				background-color: #E4B9B9;
+				/*设置圆角*/
+				border-radius: 50%;
+				border: 5px solid orange;
+				position: relative;
+				margin: 150px;
+			}
+			
+			#div2{
+				width: 3px;
+				height: 140px;
+				background-color: red;
+				
+				left:300px;
+				top:170px;
+				position: absolute;
+				/*设置旋转点*/
+				transform-origin: center bottom;
+				/*动画名称 动画持续的时间 动画实现的步骤 重复次数*/
+				animation: circle 20s steps(60) infinite;
+			}
+			
+			#div3{
+				width: 3px;
+				height: 140px;
+				background-color: navy;
+				
+				left:300px;
+				top:170px;
+				position: absolute;
+				/*设置旋转点*/
+				transform-origin: center bottom;
+				/*动画名称 动画持续的时间 动画实现的步骤 重复次数*/
+				animation: circle 10s steps(60) infinite;
+			}
+			/*指定动画步骤*/
+			@keyframes circle{
+				from{transform: rotate(0deg);}
+				to{transform: rotate(360deg);}
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div id="div1"></div>
+		<div id="div2" align="center"><img src="img/微信图片_20190122173323.jpg" width="30px" height="30px"/></div>
+		<div id="div3"><img src="img/xz.jpg" width="30px" height="30px"/></div>
+		<audio src="img/Joy Gruttmann - Schnappi.mp3" autoplay controls loop></audio>
+	</body>
+</html>
