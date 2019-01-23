@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>时钟练习</title>
+		<style type="text/css">
+			/*钟表的外形*/
+			#clock{
+				width: 300px;
+				height: 300px;
+				/*设置边框*/
+				border: 5px solid #DC143C;
+				
+				border-radius: 50%;
+				position: relative;
+				margin: 150px;
+			}
+			/*设置钟表的时间点*/
+			.line{
+				width: 5px;
+				height: 300px;
+				position: absolute;
+				background-color: #15428B;
+				left: 148px;
+			}
+			.line2{
+				transform: rotate(30deg);
+			}
+			.line3{
+				transform: rotate(60deg);
+			}
+			.line4{
+				transform: rotate(90deg);
+			}
+			.line5{
+				transform: rotate(120deg);
+			}
+			.line6{
+				transform: rotate(150deg);
+			}
+			/*覆盖层*/
+			#cover{
+				width: 270px;
+				height: 270px;
+				position: absolute;
+				border-radius: 50%;
+				background-color: white;
+				top: 15px;
+				left: 15px;
+			}
+			/*设置钟表指针*/
+			.zhen{
+				position: absolute;
+				transform-origin: center bottom;
+			}
+			/*设置时针*/
+			.hour{
+				width: 8px;
+				height: 90px;
+				background-color: black;
+				left: 146.2px;
+				top: 60px;
+				/*动画的名称 动画持续的时间 动画实现的步骤 重复次数*/
+				animation: xz 43200s infinite linear;
+			}
+			/*设置分针*/
+			.minute{
+				width: 5px;
+				height: 110px;
+				background-color: #0000FF;
+				left: 147.5px;
+				top: 40px;
+				/*动画的名称 动画持续的时间 动画实现的步骤 重复次数*/
+				animation: xz 3600s infinite linear;
+			}
+			/*设置秒针*/
+			.second{
+				width: 2px;
+				height: 140px;
+				background-color: red;
+				left: 149px;
+				top: 10px;
+				/*动画的名称 动画持续的时间 动画实现的步骤 重复次数*/
+				animation: xz 60s steps(60) infinite;
+			}
+			#point{
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				background-color: magenta;
+				position: absolute;
+				left: 140px;
+				top: 140px;
+			}
+			@keyframes xz{
+				from{transform: rotate(0deg);}
+				to{transform: rotate(360deg);}
+			}
+		</style>
+	</head>
+	<body>
+		<!--外层的圆-->
+		<div id="clock">
+			<!--六条线-->
+			<div class="line"></div>
+			<div class="line line2"></div>
+			<div class="line line3"></div>
+			<div class="line line4"></div>
+			<div class="line line5"></div>
+			<div class="line line6"></div>
+			
+			<!--覆盖层-->
+			<div id="cover"></div>
+			
+			<!--时分秒的针-->
+			<div class="zhen hour"></div>
+			<div class="zhen minute"></div>
+			<div class="zhen second"></div>
+			
+			<!--中心的圆点-->
+			<div id="point"></div>
+		</div>
+	</body>
+</html>
