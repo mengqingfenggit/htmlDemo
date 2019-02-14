@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#round{
+				/*把边距设为0*/
+				left:0; right:0; top:0; bottom: 0;
+				width: 200px;height: 200px;
+				background:yellow;
+				/*画圆*/
+				border-radius: 50%;
+				position:absolute;
+			}
+			#line{
+				/*指针的宽高*/
+				width: 4px;
+				height: 80px;
+				background: red;
+				position: absolute;
+				/*指针居中于圆*/
+				left: 98px;
+				top: 20px;
+				/*设置旋转点为线条底部*/
+				transform-origin: center bottom;
+				/*fn:为动画执行函数,60s:动画持续的时间
+				 linear:动画从头到尾的速度是相同的。
+				 infinite:动画重复执行*/
+				animation: fn 10s linear infinite;
+			}
+			@keyframes fn{
+				from{transform: rotate(0deg);}
+				to{transform: rotate(360deg);}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="round"></div>
+		<div id="line"></div>
+	</body>
+</html>

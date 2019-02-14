@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.imgs{
+				width: 300px; height: 200px;
+				background: url(img/timg.jpg) no-repeat;
+				position: absolute;
+				left: 1000px;
+				top: 100px;
+				/*动画的名称 动画持续的时间 动画实现的步骤 重复执行*/
+				animation: moveS 5s linear infinite;
+			}
+			@keyframes moveS{
+				/*0%的时候立马旋转一下*/
+				0%{transform: translateX(0px) rotateY(180deg);}
+				/*0%--49%直接一直都是这个旋转角度*/
+				49%{transform: translateX(-890px) rotateY(180deg);}
+				/*-900px那个位置的时候旋转回原来的角度*/
+				50%{transform: translateX(-900px) rotateY(0deg);}
+				100%{transform: translateX(0px) rotateY(0deg);}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="imgs"></div>
+	</body>
+</html>
